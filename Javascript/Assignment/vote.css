@@ -33,10 +33,10 @@ body {
 
 
 
-    @media (max-width: 0px) {
+    @media (max-width: 640px) {
   body {
     padding: 15px;
-    height: 400px;
+    height: 500px;
     background-color: rgba(128, 128, 128, 0.669);
   }
 
@@ -44,20 +44,20 @@ body {
     width: 100%;
     padding: 15px;
     border-radius: 8px;
-    height: 300px;
-    margin-top: 1200px;
+    height: 100px;
+    margin-top: 100px;
   }
 
   h1 {
-    font-size: 40px;
-    margin-top: 50px;
+    font-size: 20px;
+    
   }
 
   button {
-    width: 200px;
-    font-size: 40px;
+    width: 80px;
+    font-size: 17px;
     padding: 12px;
-    margin-top: 40px;
+    margin-top: 8px;
   }
 
   #result {
