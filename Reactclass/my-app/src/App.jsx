@@ -1,21 +1,38 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <> <h2 className='title'>First React Class</h2>
-    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur recusandae quidem quam fugit modi, quibusdam neque odit beatae atque eveniet, repellat laudantium molestias, quia odio nesciunt nam! Sapiente, rerum.</p>
-    <button>Click Me</button>
+    <>
+      <div className="general">
+        <h1>Web Development</h1>
+        <h3>Made easy!</h3>
+        <form action="">
+          <input
+            className="username"
+            type="text"
+            placeholder="username"
+            required
+          />
+          <input
+            className="password"
+            type="password"
+            placeholder="password"
+            required
+          />
 
+          <button type="login">Login</button>
+        </form>
 
+        <p>
+          Forgot password? <span>or</span> Sign Up
+        </p>
+      </div>
 
-
-
-    
       {/* <div><link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -40,7 +57,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
