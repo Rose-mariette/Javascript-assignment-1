@@ -1,0 +1,17 @@
+button {
+    padding-block: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 20px;
+    font-size: 20px;
+}
+.bg {
+    text-align: center;
+    margin-top: 100px;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.5s ease;
+}
