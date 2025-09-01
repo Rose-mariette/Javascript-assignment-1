@@ -78,3 +78,13 @@ document.getElementById('themeToggleButton').addEventListener('click', () => {
 
 setTheme(localStorage.getItem('theme') || 'light');
  
+
+
+// hamburger menu 
+const hamburger = document.getElementById("hamburger");
+
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});

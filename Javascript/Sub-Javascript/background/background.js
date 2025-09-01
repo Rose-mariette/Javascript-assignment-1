@@ -9,6 +9,7 @@ function getRandomColor() {
     color += letters[Math.floor(Math.random() * 16)];
   }
 
+  
   return color;
 }
 
@@ -28,7 +29,7 @@ btn.addEventListener("click", function () {
 
 let bgInterval = setInterval(() => {
   document.body.style.background = getRandomGradient();
-}, 5000);
+}, 2000);
 
 
 function reset() {
@@ -38,3 +39,14 @@ function reset() {
 }
 
 resetBtn.addEventListener("click", reset);
+
+
+
+// hamburger menu 
+const hamburger = document.getElementById("hamburger");
+
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});

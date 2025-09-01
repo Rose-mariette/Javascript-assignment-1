@@ -5,8 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Check Voting Eligibility</title>
   <link rel="stylesheet" href="vote.css">
+      <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+  
 </head>
 <body>
+      <nav>
+      <h1 class="site">MySite</h1>
+      <div  class="nav-links">
+        <a href="/Javascript/Sub-Javascript/background/background.html">Home</a>
+        <a href="/Javascript/Assignment/vote.html">Vote</a>
+        <a href="/Theme/theme.html">Theme</a>
+     
+      </div>
+       <i class="ri-menu-line" id="hamburger"></i>
+    </nav>
   <div class="container">
     <h1>Check Voting Eligibility</h1>
     <button onclick="checkEligibility()">Start</button>
@@ -29,6 +45,16 @@
         alert("Hello " + name + "! Sorry, you are not eligible to vote yet. You will be eligible in " + (18 - age) + " year(s).");
       }
     }
+
+
+    // hamburger menu 
+const hamburger = document.getElementById("hamburger");
+
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
   </script>
 </body>
 </html>
